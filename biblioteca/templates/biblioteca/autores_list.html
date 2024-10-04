@@ -7,5 +7,16 @@
 
 <h1>Bienvenidos a la página de autores</h1>
 
+{% for autor in autores_list%}
+<article>
+    <!--Mostramos información de dicho atributo del objeto Post.-->
+    <p>{{autor.id_autor}}</p>
+    <p>{{autor.nombre}}</p>
+    <p>{{autor.fecha_prestamos}}</p>
+<hr/>
+
+</article>
+{%  endfor %}
+
 </body>
 </html> 

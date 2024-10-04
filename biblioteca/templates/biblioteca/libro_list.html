@@ -7,5 +7,16 @@
 
 <h1>Bienvenidos a la página de libro</h1>
 
+{% for libro in libro_list%}
+<article>
+    <!--Mostramos información de dicho atributo del objeto Post.-->
+    <p>{{libro.id_libro}}</p>
+    <p>{{libro.titulo}}</p>
+    <p>{{libro.id_autor}}</p>
+<hr/>
+
+</article>
+{%  endfor %}
+
 </body>
 </html> 
